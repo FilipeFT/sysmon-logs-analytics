@@ -3,29 +3,36 @@ An exploration of some basic tooling to look into Windows Sysmon logs looking fo
 
 Security Log Analysis Tool for Windows Sysmon Logs
 
+In today's complex and ever-evolving cybersecurity landscape, organizations are faced with the challenge of proactively monitoring and responding to potential security threats. The increased sophistication of cyberattacks demands advanced tools and techniques to detect and mitigate security breaches. In this context, the project aims to develop a comprehensive cybersecurity tool that focuses on obtaining and analyzing Sysmon logs from Windows systems. Sysmon logs are a valuable source of information, providing insights into system activities and potential indicators of compromise.
+
 Statement of Intent:
-The goal of this project is to develop a comprehensive Security Log Analysis Tool for Windows Sysmon Logs. The tool aims to provide a user-friendly interface for security analysts and system administrators to efficiently analyze Sysmon logs, identify security incidents, and enhance the overall security posture of their Windows-based systems.
+
+The goal of this project is to create a robust and user-friendly cybersecurity tool that empowers security professionals to efficiently gather, parse, and analyze Sysmon logs in Windows environments. The tool will aid in identifying suspicious or malicious activities, allowing organizations to strengthen their cybersecurity posture and respond effectively to potential threats. This project will be completed in three stages, each building upon the previous one to achieve a fully functional and refined tool.
 
 Goals:
 
-    Sysmon Log Retrieval: Develop a module to access and retrieve Sysmon logs from the Windows event log repository. The tool should be able to fetch relevant logs, including event time, source, EventID, and the log message.
+First Iteration: Basic Functionality
 
-    Keyword-Based Search: Implement a search functionality that allows users to input keywords or phrases. The tool should then scan the Sysmon logs for these keywords and present the matching log entries for further analysis.
+    Develop a command-line tool using the Cobra framework.
+    Implement the ability to obtain Sysmon logs from the Windows event log.
+    Allow users to specify keywords as command-line arguments for log analysis.
+    Present the matching log entries in a simple format.
+    Ensure compatibility with common Windows systems.
 
-    Time-Based Filtering: Enable time-based filtering options to allow users to narrow down their search within specific time ranges. This feature will aid in isolating security incidents based on the occurrence time.
+Second Iteration: Enhanced Analysis and Output
 
-    Incident Classification: Develop a classification system to automatically categorize log entries based on predefined patterns or rules. The tool should identify common security events, such as malware execution, privilege escalation, suspicious network connections, and more.
+    Refine the log parsing algorithm to improve accuracy and performance.
+    Implement error handling to gracefully handle unexpected scenarios.
+    Provide better formatting for timestamp and log message.
+    Enhance the output presentation for improved readability.
+    Introduce basic unit tests to ensure core functionality.
 
-    Interactive Analysis: Design an interactive and intuitive interface that allows users to navigate through log entries efficiently. Users should be able to expand event details, view event correlations, and access related logs easily.
+Third Iteration: User Experience and Customization
 
-    Event Correlation: Implement event correlation capabilities to identify sequences or patterns of events that could indicate advanced persistent threats or security breaches.
+    Develop a user-friendly CLI interface with clear instructions and prompts.
+    Implement interactive mode for dynamically inputting keywords and options.
+    Allow users to customize output formats, such as JSON or CSV.
+    Enhance keyword matching logic to support advanced search patterns.
+    Incorporate logging and exception tracking for better troubleshooting.
 
-    Alerting Mechanism: Integrate an alerting system that notifies users of critical security events in real-time. The tool should provide customizable alerting rules based on specific criteria.
-
-    Reporting and Exporting: Enable generation of detailed reports summarizing security incidents, patterns, and trends. Users should also be able to export log data in various formats for further analysis or archival purposes.
-
-    Scalability and Performance: Ensure the tool's scalability to handle large volumes of Sysmon logs efficiently without compromising performance. Optimize the data processing and retrieval mechanisms.
-
-    Security and Authentication: Implement robust security measures, including user authentication and access controls, to ensure that only authorized personnel can access and use the tool.
-
-The Security Log Analysis Tool aims to simplify the process of analyzing Windows Sysmon logs, empowering security teams to
+Through these iterative stages, the project aims to provide a valuable tool for security practitioners to effectively gather and analyze Sysmon logs, thereby strengthening their ability to detect and respond to potential security threats. The final product will not only serve as a powerful cybersecurity tool but also contribute to improving overall cybersecurity practices and risk management within organizations.
